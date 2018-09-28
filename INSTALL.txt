@@ -1,0 +1,30 @@
+git extension plugin for logging work time with git (CLI).
+
+The following command log work of 3 days, 2 hours, and 1 minute for issue PROJ-123. Date is optional, and current date will be used if no date is provided:
+
+git logwork 3d2h1m PROJ-123 [2018-01-31]
+
+Note only days, hours, and minutes can be logged!
+
+Env variable GIT_LW_LAST that contains last reported work log.
+
+requires:
+- Linux, Mac
+- Shell bash
+- Python2
+
+google-spreadsheet:
+* supported 
+* service account is needed and the token too
+
+atlassian-jira:
+* supported
+* JIRA credentials will be stored locally
+
+installation:
+1 Copy the scripts to "/usr/local/git-logwork/" and make sure it is on PATH
+2 Rename "logwork.sh" to "git-logwork" and "chmod u+x git-logwork"
+  You can also copy the JSON token here if you wish.
+3 Test with "git logwork", which returns some message...
+
+
